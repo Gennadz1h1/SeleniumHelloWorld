@@ -54,7 +54,7 @@ namespace TestSelect
             IWebElement nextButton = m_driver.FindElement(By.XPath("//*[@id='identifierNext']/div/button"));
 
 
-            emailTextBox.SendKeys("henadz.zhukau@leverx.com");
+            emailTextBox.SendKeys("email");
             nextButton.Click();
 
 
@@ -66,7 +66,7 @@ namespace TestSelect
             IWebElement webElement = m_driver.FindElement(By.XPath("//input[@type='password']"));
             webElement.Click();
             IWebElement passwordTextBox = webElement;
-            passwordTextBox.SendKeys("everton18A4");
+            passwordTextBox.SendKeys("password");
 
             IWebElement next1Button = m_driver.FindElement(By.XPath("//*[@id='passwordNext']/div/button/span"));
             next1Button.Click();
@@ -94,7 +94,7 @@ namespace TestSelect
             Thread.Sleep(2000);
 
             // Store setting key of TOTT
-            byte[] key = Base32Encoding.ToBytes("jyft jash 334f vr3e 6yva ksya 5rwu 6nwf".Replace(" ", "").ToUpperInvariant());
+            byte[] key = Base32Encoding.ToBytes("seting key".Replace(" ", "").ToUpperInvariant());
             var totp = new Totp(key);
 
             IWebElement websElement = m_driver.FindElement(By.XPath("//*[@id='totpPin']"));
