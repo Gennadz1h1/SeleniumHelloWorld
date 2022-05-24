@@ -1,0 +1,228 @@
+﻿Log level is set to Informational (Default).
+Connected to test environment '< Local Windows Environment >'
+Test data store opened in 0.279 sec.
+========== Starting test discovery ==========
+========== Test discovery skipped: All test containers are up to date ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 2 Tests found in 1.2 sec ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 28.3 sec ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 2 Tests found in 679.9 ms ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 27.7 sec ==========
+Building Test Projects
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 27.2 sec ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 2 Tests found in 724 ms ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 28.3 sec ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 2 Tests found in 663.3 ms ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+True
+
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 29.1 sec ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 2 Tests found in 1.5 sec ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+result:
+False
+
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 28.6 sec ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 2 Tests found in 2.6 sec ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 28.6 sec ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 2 Tests found in 3.5 sec ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (1 Passed, 0 Failed, 0 Skipped) run in 28.4 sec ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 2 Tests found in 4.9 sec ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (1 Passed, 0 Failed, 0 Skipped) run in 32 sec ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 2 Tests found in 4.3 sec ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 10.2 sec ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 3 Tests found in 4.4 sec ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 11.8 sec ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 3 Tests found in 4.5 sec ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 37.3 sec ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 3 Tests found in 4.5 sec ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 2.3 min ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 3 Tests found in 4.5 sec ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Debugging selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+The active test run was aborted. Reason: Test host process crashed : [1652968181.304][WARNING]: This version of ChromeDriver has not been tested with Chrome version 101.
+
+========== Test run aborted: 0 Tests (0 Passed, 0 Failed, 0 Skipped) run in < 1 ms ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 3 Tests found in 4.5 sec ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 1.3 min ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 3 Tests found in 5.8 sec ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 12.7 sec ==========
