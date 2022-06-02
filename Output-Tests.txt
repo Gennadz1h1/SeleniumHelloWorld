@@ -1,51 +1,6 @@
 ﻿Log level is set to Informational (Default).
 Connected to test environment '< Local Windows Environment >'
-Source code repository not available. Some features may not work as expected.
-Test data store opened in 0.324 sec.
-StreamJsonRpc.RemoteInvocationException: Collection was modified; enumeration operation may not execute.
-   at Microsoft.ServiceHub.Framework.ServiceJsonRpcDescriptor.LocalProxyGeneration.<>c__DisplayClass23_0`1.<ReturnedTaskOfTHelper>b__0(Task`1 _)
-   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
-   at System.Threading.Tasks.Task.Execute()
---- End of stack trace from previous location where exception was thrown ---
-   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
-   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
-   at Microsoft.VisualStudio.TestWindow.Controller.NuGetService.<GetReferencedNuGetPackagesAsync>d__5.MoveNext()
---- End of stack trace from previous location where exception was thrown ---
-   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
-   at Microsoft.VisualStudio.Telemetry.WindowsErrorReporting.WatsonReport.GetClrWatsonExceptionInfo(Exception exceptionObject)
-RPC server exception:
-System.InvalidOperationException: Collection was modified; enumeration operation may not execute.
-      at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
-      at System.Collections.Generic.List`1.Enumerator.MoveNextRare()
-      at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
-      at NuGet.PackageManagement.VisualStudio.CpsPackageReferenceProject.GetPackageReferencesForFramework(IEnumerable`1 libraries, NuGetFramework targetFramework, List`1 installedPackages, IList`1 targets)
-      at NuGet.PackageManagement.VisualStudio.CpsPackageReferenceProject.<>c__DisplayClass16_0.<GetInstalledAndTransitivePackagesAsync>b__0(TargetFrameworkInformation f)
-      at System.Linq.Enumerable.<SelectManyIterator>d__17`2.MoveNext()
-      at System.Linq.Lookup`2.Create[TSource](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
-      at System.Linq.GroupedEnumerable`3.GetEnumerator()
-      at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-      at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
-      at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
-      at NuGet.PackageManagement.VisualStudio.CpsPackageReferenceProject.<GetInstalledAndTransitivePackagesAsync>d__16.MoveNext()
-   --- End of stack trace from previous location where exception was thrown ---
-      at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
-      at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
-      at NuGet.PackageManagement.VisualStudio.CpsPackageReferenceProject.<GetInstalledPackagesAsync>d__15.MoveNext()
-   --- End of stack trace from previous location where exception was thrown ---
-      at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
-      at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
-      at NuGet.VisualStudio.Implementation.Extensibility.NuGetProjectService.<GetInstalledPackagesAsync>d__5.MoveNext()
-   --- End of stack trace from previous location where exception was thrown ---
-      at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
-      at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
-      at NuGet.VisualStudio.Implementation.Extensibility.NuGetProjectService.<GetInstalledPackagesAsync>d__4.MoveNext()
-   --- End of stack trace from previous location where exception was thrown ---
-      at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
-      at Microsoft.VisualStudio.Telemetry.WindowsErrorReporting.WatsonReport.GetClrWatsonExceptionInfo(Exception exceptionObject)
-   --- End of stack trace from previous location where exception was thrown ---
-      at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
-      at NuGet.VisualStudio.Implementation.Extensibility.NuGetProjectService.<GetInstalledPackagesAsync>d__4.MoveNext()
-
+Test data store opened in 0.263 sec.
 ========== Starting test discovery ==========
 ========== Test discovery skipped: All test containers are up to date ==========
 Building Test Projects
@@ -55,13 +10,31 @@ NUnit VS Adapter 2.3.0.0 discovering tests is started
 An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
 NUnit Adapter 4.0.0.0: Test discovery starting
 NUnit Adapter 4.0.0.0: Test discovery complete
-========== Test discovery finished: 5 Tests found in 3.9 sec ==========
+========== Test discovery finished: 5 Tests found in 5.2 sec ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+Setup failed for test fixture TestSelect.TestSelect
+OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='view_container']/div/div/div[2]/div/div[2]/div[2]/div[2]/div/div/button/span"}
+  (Session info: chrome=101.0.4951.67)
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at SeleniumHelloWorld.LogInActions.signUpDemo(IWebDriver m_driver) in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\LogInActions.cs:line 65
+   at TestSelect.TestSelect.startBrowser() in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\LX Recon.cs:line 23
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 13 sec ==========
+Building Test Projects
 ========== Starting test run ==========
 NUnit Adapter 4.0.0.0: Test execution started
 Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
    NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
 NUnit Adapter 4.0.0.0: Test execution complete
-========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 42.8 sec ==========
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 52 sec ==========
 Building Test Projects
 Starting test discovery for requested test run
 ========== Starting test discovery ==========
@@ -69,14 +42,226 @@ NUnit VS Adapter 2.3.0.0 discovering tests is started
 An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
 NUnit Adapter 4.0.0.0: Test discovery starting
 NUnit Adapter 4.0.0.0: Test discovery complete
-========== Test discovery finished: 5 Tests found in 698.7 ms ==========
+========== Test discovery finished: 5 Tests found in 1.3 sec ==========
 ========== Starting test run ==========
 NUnit Adapter 4.0.0.0: Test execution started
 Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
    NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
 NUnit Adapter 4.0.0.0: Test execution complete
-========== Test run finished: 1 Tests (1 Passed, 0 Failed, 0 Skipped) run in 48.3 sec ==========
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 57.4 sec ==========
 Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 5 Tests found in 1.1 sec ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 58.4 sec ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 5 Tests found in 969.7 ms ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 57.8 sec ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 5 Tests found in 872.7 ms ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+Setup failed for test fixture TestSelect.TestSelect
+OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='view_container']/div/div/div[2]/div/div[2]/div[2]/div[2]/div/div/button/span"}
+  (Session info: chrome=101.0.4951.67)
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at SeleniumHelloWorld.LogInActions.signUpDemo(IWebDriver m_driver) in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\LogInActions.cs:line 65
+   at TestSelect.TestSelect.startBrowser() in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\LX Recon.cs:line 23
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 11.3 sec ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 5 Tests found in 793.6 ms ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+Setup failed for test fixture TestSelect.TestSelect
+OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='view_container']/div/div/div[2]/div/div[2]/div[2]/div[2]/div/div/button/span"}
+  (Session info: chrome=101.0.4951.67)
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at SeleniumHelloWorld.LogInActions.signUpDemo(IWebDriver m_driver) in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\LogInActions.cs:line 65
+   at TestSelect.TestSelect.startBrowser() in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\LX Recon.cs:line 23
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 10.3 sec ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 5 Tests found in 648.7 ms ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 57.5 sec ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 5 Tests found in 749.4 ms ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+Setup failed for test fixture TestSelect.TestSelect
+OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Другой способ']"}
+  (Session info: chrome=101.0.4951.67)
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at SeleniumHelloWorld.LogInActions.signUpDemo(IWebDriver m_driver) in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\LogInActions.cs:line 65
+   at TestSelect.TestSelect.startBrowser() in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\LX Recon.cs:line 23
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 10.2 sec ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 5 Tests found in 752.1 ms ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+Setup failed for test fixture TestSelect.TestSelect
+OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Другой способ']"}
+  (Session info: chrome=101.0.4951.67)
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at SeleniumHelloWorld.LogInActions.signUpDemo(IWebDriver m_driver) in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\LogInActions.cs:line 65
+   at TestSelect.TestSelect.startBrowser() in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\LX Recon.cs:line 23
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 10.2 sec ==========
+Building Test Projects
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 58.6 sec ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 5 Tests found in 763.8 ms ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 1 min ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 5 Tests found in 747.4 ms ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 1 min ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 5 Tests found in 671 ms ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (0 Passed, 1 Failed, 0 Skipped) run in 1.1 min ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 5 Tests found in 707.5 ms ==========
+========== Starting test run ==========
+NUnit Adapter 4.0.0.0: Test execution started
+Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld\SeleniumHelloWorld\bin\Debug\net6.0\SeleniumHelloWorld.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.0.0.0: Test execution complete
+========== Test run finished: 1 Tests (1 Passed, 0 Failed, 0 Skipped) run in 1.2 min ==========
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+NUnit VS Adapter 2.3.0.0 discovering tests is started
+An exception occurred while test discoverer 'NUnitTestDiscoverer' was loading tests. Exception: Could not load type 'System.Runtime.Remoting.Channels.IChannel' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.
+NUnit Adapter 4.0.0.0: Test discovery starting
+NUnit Adapter 4.0.0.0: Test discovery complete
+========== Test discovery finished: 5 Tests found in 697.7 ms ==========
 Executing all tests in file: LX Recon.cs
 ========== Starting test run ==========
 NUnit Adapter 4.0.0.0: Test execution started
@@ -84,4 +269,4 @@ Running selected tests in C:\Users\henadz.zhukau\source\repos\SeleniumHelloWorld
    NUnit3TestExecutor discovered 5 of 5 NUnit test cases using Current Discovery mode, Non-Explicit run
 signUpDemo: USELESS
 NUnit Adapter 4.0.0.0: Test execution complete
-========== Test run finished: 5 Tests (4 Passed, 0 Failed, 1 Skipped) run in 1.7 min ==========
+========== Test run finished: 5 Tests (4 Passed, 0 Failed, 1 Skipped) run in 2.2 min ==========

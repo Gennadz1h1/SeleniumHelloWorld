@@ -62,7 +62,7 @@ namespace SeleniumHelloWorld
             Thread.Sleep(2000);
 
             //Store locator values of Another Way button
-            IWebElement AnotherButton = m_driver.FindElement(By.XPath("//*[@id='view_container']/div/div/div[2]/div/div[2]/div[2]/div[2]/div/div/button/span"));
+            IWebElement AnotherButton = m_driver.FindElement(By.XPath("//span[text()='Другой способ']"));
             AnotherButton.Click();
 
 
@@ -71,7 +71,7 @@ namespace SeleniumHelloWorld
             Thread.Sleep(2000);
 
             //Store locator values of Google Authenticztor button
-            IWebElement AutButton = m_driver.FindElement(By.XPath("//*[@id='view_container']/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/ul/li[3]/div/div[2]"));
+            IWebElement AutButton = m_driver.FindElement(By.XPath("//strong[text()='Google Authenticator']"));
             AutButton.Click();
 
             m_driver.SwitchTo().Window(m_driver.WindowHandles[1]);

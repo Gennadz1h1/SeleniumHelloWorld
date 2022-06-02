@@ -84,7 +84,7 @@ namespace TestSelect
             Thread.Sleep(2000);
 
             //Store locator values of Another Way button
-            IWebElement AnotherButton = m_driver.FindElement(By.XPath("//*[@id='view_container']/div/div/div[2]/div/div[2]/div[2]/div[2]/div/div/button/span"));
+            IWebElement AnotherButton = m_driver.FindElement(By.XPath("//span[text()='Другой способ']"));
             AnotherButton.Click();
 
 
@@ -93,7 +93,7 @@ namespace TestSelect
             Thread.Sleep(2000);
 
             //Store locator values of Google Authenticztor button
-            IWebElement AutButton = m_driver.FindElement(By.XPath("//*[@id='view_container']/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/ul/li[3]/div/div[2]"));
+            IWebElement AutButton = m_driver.FindElement(By.XPath("//strong[text()='Google Authenticator']"));
             AutButton.Click();
 
             m_driver.SwitchTo().Window(m_driver.WindowHandles[1]);
@@ -185,17 +185,25 @@ namespace TestSelect
             //Check that recon name contains "test"
             Assert.LessOrEqual(ExpectedURTonDP, ActuaReconNameDP, "Recon name = %text%");
 
-            IWebElement body = m_driver.FindElement(By.TagName("body"));
+            // Find Dashboard elements and count them
+            Thread.Sleep(2000);
+            var elements = m_driver.FindElements(By.XPath("//div[contains(@class, 'list-item')]"));
+            int count = elements.Count;
+            var ActualCountElements = count;
+            Assert.LessOrEqual(7, ActualCountElements, "Count elements = 7");
 
-            IAction scrollDown = new Actions(m_driver)
-                .MoveToElement(body, body.Size.Width - 10, 15) // position mouse over scrollbar
-                .ClickAndHold()
-                .MoveByOffset(0, 50) // scroll down
-                .Release()
-                .Build();
+            // Scroll dashboard page to 2 element
+            IWebElement DashboadDeal = m_driver.FindElement(By.XPath("(//div[contains(@class, 'list-item')])[3]"));
+            DashboadDeal.Click();
+            Actions actions = new Actions(m_driver);
+            actions.MoveToElement(DashboadDeal);
+            actions.Perform();
 
-            scrollDown.Perform();
-
+            //Find Dashboard elements after scroll and count them
+            var elements1 = m_driver.FindElements(By.XPath("//div[contains(@class, 'list-item')]"));
+            int count1 = elements1.Count;
+            var ActualCountElements1 = count1;
+            Assert.LessOrEqual(8, ActualCountElements1, "After scrool, count elements = 8");
 
         }
 
@@ -247,10 +255,6 @@ namespace TestSelect
             checkBoxBycategoriesButton.Click();
 
             Thread.Sleep(2000);
-        
-            //Check that recons filtered by "New Year" category
-            //var ActualReconRP = checkBoxBycategoriesButton.TagName;
-            //Assert.AreEqual(ExpectedReconRP, ActualReconRP, "Filtered by 'New Year' category");
 
             // Find and click "Clear filters" button
             IWebElement clearFiltersButton = m_driver.FindElement(By.XPath("//button[text()='Clear filters']"));
@@ -267,11 +271,10 @@ namespace TestSelect
             SearchByTitle.Clear();
 
             Thread.Sleep(2000);
-            //     //Find and click "Give a recon" button on some recon
+            //Find and click "Give a recon" button on some recon
             IWebElement GiveReconButton = m_driver.FindElement(By.XPath("//button[text()='Give a recon']"));
             GiveReconButton.Click();
             Thread.Sleep(3000);
-
 
             // Find and click 'Search by name' field and fill that field
             IWebElement SearchByNameModalWindow = m_driver.FindElement(By.XPath("//input[@placeholder='Search by name']"));
@@ -292,8 +295,6 @@ namespace TestSelect
             Actions actions = new Actions(m_driver);
             actions.MoveToElement(IvanLukanuyL).Perform();
 
-            //Find User button and move to "Give to" field
-            //IWebElement UserinModalWindow = m_driver.FindElement(By.XPath("(//button[@type='button'])[18]"));
             UserinModalWindow.Click();
             Thread.Sleep(2000);
 
@@ -301,8 +302,6 @@ namespace TestSelect
             IWebElement GiveAReconButton = m_driver.FindElement(By.XPath("//button[contains(@class, 'create-recon')]"));
             GiveAReconButton.Click();
 
-            //Selected to window
-           // m_driver.SwitchTo().Window(m_driver.WindowHandles[0]);
             Thread.Sleep(3000);
 
             //Find and click Logo
@@ -318,18 +317,119 @@ namespace TestSelect
             // Check that name for first UserRecon Item on the Dasboard page = name gived recon
             Assert.AreEqual(ExpectedReconNameMW, ActualReconNameMW, "Gived recon is first on the Dashboard page");
 
- 
+            // Go to Recons page
+            Thread.Sleep(2000);
+            IWebElement ReconsButton1 = m_driver.FindElement(By.XPath("//a[@href='/recons']"));
+            ReconsButton1.Click();
+            Thread.Sleep(2000);
+
+            // Find Recons elements and count them
+            Thread.Sleep(2000);
+            var elements = m_driver.FindElements(By.XPath("//div[contains(@class, 'list-item')]"));
+            int count = elements.Count;
+            var ActualCountElements = count;
+            Assert.AreEqual(9, ActualCountElements, "Count elements = 9");
+
+            // Scroll Reconspage to 2 element
+            IWebElement DashboadDeal = m_driver.FindElement(By.XPath("(//div[contains(@class, 'list-item')])[5]"));
+            DashboadDeal.Click();
+            Actions action = new Actions(m_driver);
+            action.MoveToElement(DashboadDeal);
+            action.Perform();
+            Thread.Sleep(2000);
+
+            //Find Dashboard elements after scroll and count them
+            var elements1 = m_driver.FindElements(By.XPath("//div[contains(@class, 'list-item')]"));
+            int count1 = elements1.Count;
+            var ActualCountElements1 = count1;
+            Assert.AreEqual(11, ActualCountElements1, "After scrool, count elements = 11");
+
+            //Find and click "Give a recon" button on some recon
+            IWebElement GiveReconButton1= m_driver.FindElement(By.XPath("//button[text()='Give a recon']"));
+            GiveReconButton1.Click();
+            Thread.Sleep(3000);
+
+            // Find element for Ivan Lukyanau and Darya Tatarynava
+            IWebElement IvanLukanuyL1 = m_driver.FindElement(By.XPath("//p[text()='Ivan Lukyanau']"));
+            IWebElement DaryaTatarynava = m_driver.FindElement(By.XPath("//p[text()='Darya Tatarynava']"));
+
+            //Find User in modal Window
+            IWebElement UserinModalWindow1= m_driver.FindElement(By.XPath("(//button[contains(@class, 'move-button')])[1]"));
+            Actions actions1= new Actions(m_driver);
+            actions1.MoveToElement(IvanLukanuyL1).Perform();
+
+            UserinModalWindow1.Click();
+            Thread.Sleep(2000);
+
+            IWebElement UserinModalWindow2 = m_driver.FindElement(By.XPath("(//button[contains(@class, 'move-button')])[1]"));
+            Actions actions2 = new Actions(m_driver);
+            actions2.MoveToElement(DaryaTatarynava).Perform();
+
+            UserinModalWindow2.Click();
+            Thread.Sleep(2000);
+
+            // Find Message field, clear and fill that //textarea[@placeholder="Message"]
+            IWebElement MessageField = m_driver.FindElement(By.XPath("//textarea[@placeholder='Message']"));
+            MessageField.Click();
+            MessageField.Clear();
+            MessageField.SendKeys("congratulations");
+            var ExpectedReconMessage = MessageField.Text;
+
+            // Find and click 'Give a recon' button in the modal window
+            IWebElement GiveAReconButton1 = m_driver.FindElement(By.XPath("//button[contains(@class, 'create-recon')]"));
+            GiveAReconButton1.Click();
+
+            Thread.Sleep(3000);
+
+            //Find and click Dashboard button
+            IWebElement DasboardButton1= m_driver.FindElement(By.XPath("(//a[@href='/dashboard'])[2]"));
+            DasboardButton1.Click();
+
+            Thread.Sleep(2000);
+
+            // Find first User Recon Item on the Dashboard Page
+            IWebElement FirstRecon = m_driver.FindElement(By.XPath("(//div[contains(@class, 'comment-box')])[1]"));
+          var ActualReconMessage = FirstRecon.Text;
+
+            Assert.AreEqual(ExpectedReconMessage, ActualReconMessage, "Recon message");
+
+            // Find second User Recon Item on the Dashboard Page
+            IWebElement FirstRecon1= m_driver.FindElement(By.XPath("(//div[contains(@class, 'comment-box')])[2]"));
+            var ActualReconMessage1= FirstRecon1.Text;
+
+            Assert.AreEqual(ExpectedReconMessage, ActualReconMessage1, "Recon message");
+             
+            
         }
 
         [Test]
         public void ProfileDemo()
         {
-            //Authorization demo
             
-
             // Find and click to Avatar 
             IWebElement Avatar = m_driver.FindElement(By.XPath("//*[@id='app']/div/div[1]/div/button[1]"));
             Avatar.Click();
+            Thread.Sleep(2000);
+
+            // Find Profile elemets and count them
+            Thread.Sleep(2000);
+            var elements = m_driver.FindElements(By.XPath("//div[contains(@class, 'list-item')]"));
+            int count = elements.Count;
+            var ActualCountElements = count;
+            Assert.LessOrEqual(7, ActualCountElements, "Count elements = 7");
+
+            // Scroll profile page to 2 element
+            IWebElement DashboadDeal = m_driver.FindElement(By.XPath("(//div[contains(@class, 'list-item')])[3]"));
+            DashboadDeal.Click();
+            Actions actions = new Actions(m_driver);
+            actions.MoveToElement(DashboadDeal);
+            actions.Perform();
+
+            //Find Profile elemets after scroll and count them
+            var elements1 = m_driver.FindElements(By.XPath("//div[contains(@class, 'list-item')]"));
+            int count1 = elements1.Count;
+            var ActualCountElements1 = count1;
+            Assert.LessOrEqual(8, ActualCountElements1, "After scrool, count elements = 8");
             Thread.Sleep(2000);
 
             // Find 'Search by recon' field and fill that field
@@ -370,16 +470,13 @@ namespace TestSelect
 
             // Check that User Name = choused name
             Assert.LessOrEqual(ExpectedRUserNamePP, ActualRUserNamePP, "User Name = choused name");
-           
-           
+
 
         }
 
         [Test]
         public void LXPeopleDemo()
         {
-            //Authorization demo
-            
 
             //Find and click "LX People" button
             IWebElement LXPeopleButton = m_driver.FindElement(By.XPath("//a[@href='/lxpeople']"));
@@ -410,10 +507,6 @@ namespace TestSelect
             CheckBoxDD.Click();
             Thread.Sleep(2000);
 
-            //Check that recons filtered by "Administrator" department
-            //var ActualDepartment = CheckBoxDD.TagName;
-            //Assert.AreEqual(ExpectedDepartment, ActualDepartment, "Filtered by 'Administrator' department");
-
             // Find and click "Clear filter" button
             IWebElement ClearFilterDD = m_driver.FindElement(By.XPath("//button[text()='Clear filters']"));
             ClearFilterDD.Click();
@@ -431,9 +524,6 @@ namespace TestSelect
             IWebElement UserNameLX = m_driver.FindElement(By.XPath("//div[@title='Ivan Lukyanau']"));
             var ExpextedUserName = UserNameLX.Text;
 
-            // Find some user
-           // IWebElement UserLX = m_driver.FindElement(By.XPath("//div[='app']"));
-            //UserLX.Click();
             Thread.Sleep(2000);
 
             // Find and click View on the some user
@@ -463,7 +553,6 @@ namespace TestSelect
 
             // Check that Filter by department is appears
             Assert.LessOrEqual(Expectedbutton, Actualbutton, "Check that Filter by department is appears");
-
 
         }
 
